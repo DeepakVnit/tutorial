@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tutorial';
+  value: string = 'tutorial';
+  label: string = 'input';
+
+  public onClick(event: any): void {
+    this.label = 'new Label';
+  }
 }
